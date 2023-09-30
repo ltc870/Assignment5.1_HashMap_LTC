@@ -39,7 +39,7 @@ public class Dictionary {
 	
 	public void printDictionary() {
 		for (Map.Entry<String, String> word : dictionary.entrySet()) {
-			System.out.println("{" + word.getKey() + "=> " + ": " + word.getValue() + "}");
+			System.out.println("{" + word.hashCode() + " - " + word.getKey() + " => " + ": " + word.getValue() + "}");
 		}
 	}
 }//end class

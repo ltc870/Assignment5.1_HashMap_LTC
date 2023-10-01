@@ -14,10 +14,11 @@ public class Dictionary {
 	
 	/** Loads an excel, csv, or txt file and formats the words and definitions 
 	 *  into array pairs.
+	 *  @param takes the dictionary list of words.
 	 *  @throws FileNotFoundException if the file is not found. 
 	 */
-	public void loadDictionary() throws FileNotFoundException{
-		File file = new File("DictionaryWordValuePairs.txt");
+	public void loadDictionary(String dictionaryList) throws FileNotFoundException{
+		File file = new File(dictionaryList);
 		Scanner scanner = new Scanner(file);
 		
 		while(scanner.hasNext()) {

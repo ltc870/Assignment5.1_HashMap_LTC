@@ -5,7 +5,7 @@ import java.io.*;
 public class Dictionary {
 
 
-	private Map<String, String> dictionary;
+	private HashMap<String, String> dictionary;
 	
 	public Dictionary() {
 		dictionary = new HashMap<String, String>();

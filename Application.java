@@ -5,7 +5,7 @@ public class Application {
 	public static void main(String[] args) throws FileNotFoundException {
 		// TODO Auto-generated method stub
 		Dictionary dictionary = new Dictionary();
-		dictionary.loadDictionary();
+		dictionary.loadDictionary("DictionaryWordValuePairs.txt");
 		
 		dictionary.printDictionary();
 		System.out.println("");
